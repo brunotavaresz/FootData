@@ -1,0 +1,323 @@
+/* Importar fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos gerais da aplicação */
+.main {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Header principal */
+.app-header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.app-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Container de seleção de clubes */
+.club-selection-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.club-selection-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.club-selection-container h3 {
+    color: #2a5298;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* VS Divider */
+.vs-divider {
+    font-size: 4rem;
+    color: #2a5298;
+    text-align: center;
+    margin: 2rem 0;
+    animation: pulse 2s infinite;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Cards métricos */
+.metric-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0.5rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.metric-card h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.metric-card h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Cards dos jogadores */
+.player-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #2a5298;
+    transition: all 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-left-width: 6px;
+}
+
+/* Campo de futebol */
+.football-field {
+    background: linear-gradient(45deg, #228B22, #32CD32);
+    border-radius: 15px;
+    border: 3px solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.field-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(90deg, white 1px, transparent 1px),
+        linear-gradient(180deg, white 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.1;
+}
+
+/* Display da formação */
+.formation-display {
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+    color: #2a5298;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Botões personalizados */
+.stButton > button {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(30, 60, 114, 0.3);
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* Containers de gráficos */
+.chart-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+/* Tabs personalizadas */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 24px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #2a5298;
+    font-weight: bold;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #2a5298;
+    color: white;
+}
+
+/* Cores dos ratings */
+.rating-gold { 
+    background: linear-gradient(135deg, #FFD700, #FFA500); 
+    color: black;
+}
+
+.rating-silver { 
+    background: linear-gradient(135deg, #C0C0C0, #A8A8A8); 
+    color: black;
+}
+
+.rating-bronze { 
+    background: linear-gradient(135deg, #CD7F32, #B8860B); 
+    color: black;
+}
+
+.rating-common { 
+    background: linear-gradient(135deg, #808080, #696969); 
+    color: white;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Efeitos especiais */
+.glow {
+    box-shadow: 0 0 20px rgba(42, 82, 152, 0.5);
+}
+
+.shimmer {
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.5) 50%, transparent 70%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .app-header h1 {
+        font-size: 2rem;
+    }
+    
+    .app-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .vs-divider {
+        font-size: 2.5rem;
+    }
+    
+    .club-selection-container {
+        padding: 1rem;
+    }
+    
+    .metric-card {
+        padding: 1rem;
+    }
+    
+    .player-card {
+        padding: 0.8rem;
+    }
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
